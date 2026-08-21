@@ -227,7 +227,7 @@ class Retina(object):
             np.degrees(np.arctan2(X - center_x, center_y - Y)) + 360.0
         ) % 360.0
 
-        # Diveider lines rotater
+        # Divider lines rotater
         fixed_bounds = [(theta_0 + k * 90.0) % 360.0 for k in range(5)]
         ring_angle_bounds = {i: fixed_bounds for i in range(num_rings)}
 
