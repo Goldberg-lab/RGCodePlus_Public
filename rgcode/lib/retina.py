@@ -165,8 +165,8 @@ class Retina(object):
         else:
             filepath = os.path.join(self.folder, filename)
 
-        imsave(filepath, mask)
-        print(f"Filled mask saved to {filepath}")
+        #imsave(filepath, mask)
+        #print(f"Filled mask saved to {filepath}")
         return filepath
 
     def make_density_circle_map_fixed_quadrants(
@@ -325,7 +325,7 @@ class Retina(object):
         visual_save_path = os.path.join(
             target_folder, f'{self.filename}_density_fixed_quadrants_raw.tif'
         )
-        imsave(visual_save_path, visual.astype(np.uint8))
+        #imsave(visual_save_path, visual.astype(np.uint8))
         #print(f'Raw density image saved to {visual_save_path}')
 
         fig, ax = plt.subplots(figsize=(12, 12))
